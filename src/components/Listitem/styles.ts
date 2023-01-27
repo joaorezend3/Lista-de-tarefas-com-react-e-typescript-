@@ -1,5 +1,4 @@
 import { type } from "os";
-import { PassThrough } from "stream";
 import styled from "styled-components";
 type containerProps ={
     done: boolean;
@@ -20,5 +19,6 @@ input{
 }
 label{
     color:white;
-    text-decoration: ${done ? 'line-PassThrough' : 'initial'};` 
+    text-decoration:${done ? 'line-through' : 'initial'};
+}` 
 ));

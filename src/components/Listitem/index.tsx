@@ -8,8 +8,8 @@ export const ListItem = ({ item }: props) => {
     const [isChecked, setCheckd] = useState(item.done);
     return (
         <C.container done={isChecked}>
-            <input type="checkbox" checked={isChecked} onChange={e => setCheckd(e.target.checked)}/>
-            <label>{item.name}</label>
+            <input type="checkbox" checked={isChecked} onChange={e => setCheckd(e.target.checked)} />
+            <label>{item.id} - {item.name}</label>
         </C.container>
     );
 }
