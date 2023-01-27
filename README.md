@@ -1,6 +1,5 @@
 # Lista de Tarefas
-
-<img href="https://github.com/joaorezend3/Lista-de-tarefas-com-react-e-typescript-/blob/master/src/imgs/lista_img.png" alt="IMG PROJECT"> 
+![Screenshot](https://github.com/joaorezend3/Lista-de-tarefas-com-react-e-typescript-/blob/master/src/imgs/lista_img.png)
 
 ### Para iniciar o projeto em sua maquina e necessário seguintes comandos:
 ### `npm install` 
