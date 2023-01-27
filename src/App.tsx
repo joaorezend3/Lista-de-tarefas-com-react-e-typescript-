@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import * as C from './App.style';
 import { item } from './types/item';
-import { Addtarefa } from './components/addtarefa'
+import { Addtarefa } from './components/addtarefa';
 import { ListItem } from './components/Listitem';
+import { Listsocial } from './components/social';
 const App = () => {
   const [list, setList] = useState<item[]>([
   ]);
@@ -25,7 +26,9 @@ const App = () => {
           <ListItem key={index} item={item} />
         ))}
       </C.area>
+      <Listsocial />
     </C.container>
+
   )
 };
 export default App;

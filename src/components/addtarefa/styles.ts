@@ -9,7 +9,7 @@ input{
 border-radius:6px;
 height:35px;
 padding:5px;
-background-color:#17181f;
+background-color:#181D31;
 color:#fff;flex:1;
 border:solid 1px #fff;
 }
