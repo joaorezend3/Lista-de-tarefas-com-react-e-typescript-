@@ -4,9 +4,11 @@ import { item } from './types/item';
 import { Addtarefa } from './components/addtarefa';
 import { ListItem } from './components/Listitem';
 import { Listsocial } from './components/social';
+
 const App = () => {
-  const [list, setList] = useState<item[]>([
-  ]);
+  const [list, setList] = useState<item[]>(
+    JSON.parse(localStorage.getItem('list') || '[]')
+  );
 
   const hendleAddTask = (taskName: string) => {
     let newList = [...list];
@@ -16,7 +18,9 @@ const App = () => {
       done: false
     });
     setList(newList);
-  }
+    localStorage.setItem('list', JSON.stringify(newList));
+  };
+
   return (
     <C.container>
       <C.area>
@@ -28,7 +32,7 @@ const App = () => {
       </C.area>
       <Listsocial />
     </C.container>
-
-  )
+  );
 };
+
 export default App;
