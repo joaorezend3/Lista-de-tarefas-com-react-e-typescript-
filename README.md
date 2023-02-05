@@ -16,7 +16,7 @@ Este é um projeto simples que permite ao usuário gerenciar sua lista de tarefa
 
 - React
 - TypeScript
-
+- styled-components
 ## Instalação
 
 `git clone https://github.com/joaorezend3/Lista-de-tarefas-com-react-e-typescript-.git`
